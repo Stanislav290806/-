@@ -1,0 +1,170 @@
+/* Загальні стилі */
+body {
+    font-family: Andale Mono, monospace	;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/backg.jpg");
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2E8B57; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    opacity: 0.8; /* Зменшено до 0.8 */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8f9fa; 
+}
+
+main {
+    flex: 1; 
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: rgba(48, 48, 48, 0.9); /* Додано прозорий фон */
+}
+
+section h2 {
+    color: #2E8B57; 
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* Анімації */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f8f9fa; 
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Мобільна версія */
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .staff-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .staff-member {
+        margin: 10px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .staff-member img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Стилі для фото викладачів */
+.staff-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.staff-member {
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+}
+
+.staff-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.staff-member p {
+    background-color: rgba(0, 100, 0, 0.7); /* Напівпрозорий темно-зелений фон */
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}

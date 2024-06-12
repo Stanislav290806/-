@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студентське життя - Кафедра комп’ютерних інформаційних технологій</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dots {
+            text-align: center;
+            padding-top: 16px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }    </style>
+</head>
+<body>
+    <header>
+        <h1>Кафедра комп’ютерних інформаційних технологій</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про кафедру</a></li>
+                <li><a href="staff.html">Викладачі</a></li>
+                <li><a href="programs.html">Освітні програми</a></li>
+                <li><a href="research.html">Наукова діяльність</a></li>
+                <li><a href="student-life.html">Студентське життя</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>    </header>
+
+    <main>
+        <section id="student-life">
+            <h2>Студентське життя</h2>
+            <p>Студентське життя на кафедрі комп’ютерних інформаційних технологій багатогранне та насичене подіями та можливостями. Ми прагнемо створити сприятливу атмосферу для розвитку студентів як фахівців та як особистостей.</p>
+            <p>Студенти кафедри активно беруть участь у різноманітних заходах, що відбуваються як на території університету, так і за його межами. Вони беруть участь у конференціях, хакатонах, майстер-класах та інших професійних заходах, де можуть показати свої знання та вміння, а також навчитися від інших учасників.</p>
+            <p>Крім того, студенти активно взаємодіють один з одним поза лекційними аудиторіями. Вони об'єднуються в групи за інтересами, створюють студентські клуби та організовують різноманітні заходи, такі як вечірки, екскурсії, спортивні турніри та багато іншого.</p>
+            <p>Університет також надає студентам можливості для власного розвитку. Це можуть бути курси підвищення кваліфікації, програми стажування у великих IT компаніях або міжнародні обміни, які допомагають студентам розширювати свої горизонти та отримувати нові знання.</p>
+            <p>Таке різноманіття подій та можливостей дозволяє студентам не тільки отримувати якісну освіту, але й розвивати себе як особистості, розширювати свої соціальні контакти та знаходити нові можливості для майбутньої кар'єри.</p>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/navchannya-v-universiteti.jpg" alt="image1">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/students-work.jpg" alt="image2">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/2_16.jpg" alt="image1">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/3_16.jpg" alt="image2">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/1551259808_1uspgzyuhjc.jpg" alt="image1">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/2447-1024x724.jpg" alt="image2">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/studentske-zhittja-ta-robota-v-polschi-skilki-zarobljajut-studenti-default.jpg" alt="image1">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/4 (26)_0_0.jpg" alt="image2">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/navchannya-v-universiteti.jpg" alt="image2">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Кафедра комп’ютерних інформаційних технологій</p>    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }    </script>
+</body>
+</html>
